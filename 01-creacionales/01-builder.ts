@@ -128,7 +128,7 @@ class SimulatorDirector {
 }
 
 // Client
-function main() {
+function mainBuilder() {
   const builder = new ConcreteFinancialSimulatorBuilder();
   const director = new SimulatorDirector(builder);
 
@@ -138,4 +138,4 @@ function main() {
   homeSimulator.displayDetails();
 }
 
-main();
+mainBuilder();

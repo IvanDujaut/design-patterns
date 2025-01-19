@@ -119,7 +119,7 @@ class FinancialDashboard {
   }
 }
 
-function main() {
+function mainAbstractFactory() {
   console.log("Dark Theme");
   const darkThemeFactory = new DarkThemeFactory();
   const darkDashboard = new FinancialDashboard(darkThemeFactory);
@@ -136,4 +136,4 @@ function main() {
   highContrastDashboard.render();
 }
 
-main();
+mainAbstractFactory();
