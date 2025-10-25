@@ -132,7 +132,7 @@ class RetirementAccountCreator extends AccountCreator {
 }
 
 //Client Code
-function main() {
+function mainFactoryMethod() {
   const savingsCreator = new SavingsAccountCreator();
   console.log(savingsCreator.generateAccount());
 
@@ -143,4 +143,4 @@ function main() {
   console.log(retirementCreator.generateAccount());
 }
 
-main();
+mainFactoryMethod();
